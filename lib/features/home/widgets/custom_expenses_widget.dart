@@ -30,9 +30,15 @@ class CustomExpensesWidget extends StatelessWidget {
                     Assets.imagesIncome,
                   ),
                   IconButton(
-                      padding: const EdgeInsets.all(0),
-                      onPressed: () {},
-                      icon: const Icon(Icons.arrow_back))
+                    padding: const EdgeInsets.all(0),
+                    onPressed: () {},
+                    icon: Transform.rotate(
+                      angle: 3.14,
+                      child: const Icon(
+                        Icons.arrow_back,
+                      ),
+                    ),
+                  ),
                 ],
               ),
               const Expanded(child: SizedBox()),
