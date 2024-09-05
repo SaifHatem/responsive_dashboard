@@ -13,25 +13,28 @@ class DesktopLayout extends StatelessWidget {
           flex: 1,
           child: CustomDrawer(),
         ),
-        Expanded(
+        const SizedBox(
+          width: 16,
+        ),
+        const Expanded(
           flex: 3,
           child: Column(
             children: [
-              const Expanded(
+              Expanded(
                 child: AllExpenses(),
               ),
-              Expanded(
-                child: Padding(
-                  padding:
-                      const EdgeInsets.only(bottom: 20.0, right: 20, left: 20),
-                  child: Container(
-                    decoration: BoxDecoration(
-                      color: Colors.indigo,
-                      borderRadius: BorderRadius.circular(12),
-                    ),
-                  ),
-                ),
-              ),
+              // Expanded(
+              //   child: Padding(
+              //     padding:
+              //         const EdgeInsets.only(bottom: 20.0, right: 20, left: 20),
+              //     child: Container(
+              //       decoration: BoxDecoration(
+              //         color: Colors.indigo,
+              //         borderRadius: BorderRadius.circular(12),
+              //       ),
+              //     ),
+              //   ),
+              // ),
             ],
           ),
         ),

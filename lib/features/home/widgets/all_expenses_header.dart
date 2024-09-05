@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:responsive_dashboard/core/utils/app_styles.dart';
-import 'package:responsive_dashboard/features/home/widgets/custom_drop_down.dart';
+import 'package:responsive_dashboard/features/home/widgets/range_option.dart';
 
 class AllExpensesHeader extends StatelessWidget {
   const AllExpensesHeader({
@@ -16,11 +16,7 @@ class AllExpensesHeader extends StatelessWidget {
           style: AppStyles.fontSemiBold20,
         ),
         Spacer(),
-        Expanded(
-          child: SizedBox(
-            child: CustomDropDown(),
-          ),
-        ),
+        RangeOption(),
       ],
     );
   }
